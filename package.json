@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "dev": "nodemon index.js",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "cross-env NODE_ENV=production node index.js",
+        "dev": "cross-env NODE_ENV=development nodemon index.js",
+        "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
         "lint": "eslint .",
         "lint:1": "eslint"
     },
@@ -19,13 +19,19 @@
         "mongoose": "^6.10.0"
     },
     "devDependencies": {
+        "cross-env": "^7.0.3",
         "eslint": "^8.35.0",
         "eslint-config-prettier": "^8.6.0",
         "eslint-config-standard": "^17.0.0",
         "eslint-plugin-import": "^2.27.5",
         "eslint-plugin-n": "^15.6.1",
         "eslint-plugin-promise": "^6.1.1",
+        "jest": "^29.4.3",
         "nodemon": "^2.0.20",
-        "prettier": "2.8.4"
+        "prettier": "2.8.4",
+        "supertest": "^6.3.3"
+    },
+    "jest": {
+        "testEnvironment": "node"
     }
 }

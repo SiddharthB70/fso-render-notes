@@ -1,8 +1,15 @@
 {
-    "debug.console.closeOnEnd": true,
     "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
+        "source.fixAll.eslint": true
     },
     "eslint.validate": ["javascript"]
-    
+    // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    // "editor.formatOnPaste": false, // required
+    // "editor.formatOnType": false, // required
+    // "editor.formatOnSave": true, // optional
+    // "editor.formatOnSaveMode": "file", // required to format on save
+    // "files.autoSave": "onFocusChange",
+    // "[javascript]": {
+    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // optional but recommended
 }
