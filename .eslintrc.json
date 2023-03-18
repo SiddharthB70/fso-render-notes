@@ -16,6 +16,7 @@
         "linebreak-style": ["error", "unix"],
         "semi": ["error", "always"],
         "no-unused-vars": "off",
-        "multiline-ternary": "error"
+        "multiline-ternary": "error",
+        "curly": "error"
     }
 }
